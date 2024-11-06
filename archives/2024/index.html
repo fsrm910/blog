@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>浮生若梦</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/font/iconfont/iconfont.css">
     <style>
         .content-collapse {
             overflow: hidden;
@@ -19,7 +20,7 @@
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body class="bg-gray-50">
 <!-- 主容器 -->
-<div class="max-w-xl mx-auto">
+<div class="2xl:max-w-4xl xl:max-w-2xl lg:max-w-xl md:max-w-full sm:max-w-full mx-auto">
     <!-- 顶部图片区域 -->
     <div class="w-full h-80 bg-cover bg-center" style="background-image: url('/images/background.png');">
     </div>
@@ -45,11 +46,7 @@
                     <div class="text-gray-600 content-collapse text-[15px]" id="content-0">
                         <p>生命的意义是什么？<br>活着？<br>不！<br>是来过。</p>
 
-
-
-                          
-
-
+                        
                     </div>
                     <button onclick="toggleContent(0)"
                             style="color: #576b95"
@@ -80,16 +77,16 @@
 
                             <!-- 弹出的操作菜单 -->
                             <div id="actions-0"
-                                 class="hide absolute right-0 mt-1 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
-                                 style="top: 50%;">
+                                 class="hide absolute right-[-3rem] top-3 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
+                            >
                                 <div class="flex items-center text-white divide-x divide-white/[0.2]">
                                     <button onclick="handleAction('save', 0)"
-                                            class="px-3 py-1 text-sm hover:bg-white/[0.1]">
-                                        icon-zan   赞
+                                            class="w-24 px-3 py-1 text-sm hover:bg-white/[0.1] flex items-center justify-center">
+                                        <i class="iconfont icon-zan mr-1"></i> 赞
                                     </button>
                                     <button onclick="handleAction('comment', 0)"
-                                            class="px-3 py-1 text-sm hover:bg-white/[0.1]">
-                                        评论
+                                            class="w-24 px-3 py-1 text-sm hover:bg-white/[0.1] flex items-center justify-center">
+                                        <i class="iconfont icon-pinglun2 mr-1"></i> 评论
                                     </button>
                                 </div>
                             </div>
@@ -113,11 +110,7 @@
                     <div class="text-gray-600 content-collapse text-[15px]" id="content-1">
                         <p>你不应该对短暂出现的人执念太深。</p>
 
-
-
-                          
-
-
+                        
                     </div>
                     <button onclick="toggleContent(1)"
                             style="color: #576b95"
@@ -148,16 +141,16 @@
 
                             <!-- 弹出的操作菜单 -->
                             <div id="actions-1"
-                                 class="hide absolute right-0 mt-1 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
-                                 style="top: 50%;">
+                                 class="hide absolute right-[-3rem] top-3 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
+                            >
                                 <div class="flex items-center text-white divide-x divide-white/[0.2]">
                                     <button onclick="handleAction('save', 1)"
-                                            class="px-3 py-1 text-sm hover:bg-white/[0.1]">
-                                        icon-zan   赞
+                                            class="w-24 px-3 py-1 text-sm hover:bg-white/[0.1] flex items-center justify-center">
+                                        <i class="iconfont icon-zan mr-1"></i> 赞
                                     </button>
                                     <button onclick="handleAction('comment', 1)"
-                                            class="px-3 py-1 text-sm hover:bg-white/[0.1]">
-                                        评论
+                                            class="w-24 px-3 py-1 text-sm hover:bg-white/[0.1] flex items-center justify-center">
+                                        <i class="iconfont icon-pinglun2 mr-1"></i> 评论
                                     </button>
                                 </div>
                             </div>
@@ -181,15 +174,19 @@
                     <div class="text-gray-600 content-collapse text-[15px]" id="content-2">
                         <p>我站在儿时的小巷回头望，再也看不到那个快乐的少年郎。</p>
 
-
-
-                          
-                        <div class="text-right block pr-8 text-[14px] pt-[4px]  ">
-                            &mdash; 摘自<span class="inline-block from-author">山河</span><span class="from-type">作词</span>的<a class="from-name">《望故乡》</a>
-                           </div>
                         
-
-
+                            <div class="text-right block pr-8 text-[14px] pt-[4px]  ">
+                                &mdash;
+                                摘自<span
+                                        class="inline-block from-author">山河</span>
+                                
+                                <span
+                                        class="from-type">作词</span>的
+                                
+                                <a class="from-name">《望故乡》</a>
+                                
+                            </div>
+                        
                     </div>
                     <button onclick="toggleContent(2)"
                             style="color: #576b95"
@@ -220,16 +217,16 @@
 
                             <!-- 弹出的操作菜单 -->
                             <div id="actions-2"
-                                 class="hide absolute right-0 mt-1 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
-                                 style="top: 50%;">
+                                 class="hide absolute right-[-3rem] top-3 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
+                            >
                                 <div class="flex items-center text-white divide-x divide-white/[0.2]">
                                     <button onclick="handleAction('save', 2)"
-                                            class="px-3 py-1 text-sm hover:bg-white/[0.1]">
-                                        icon-zan   赞
+                                            class="w-24 px-3 py-1 text-sm hover:bg-white/[0.1] flex items-center justify-center">
+                                        <i class="iconfont icon-zan mr-1"></i> 赞
                                     </button>
                                     <button onclick="handleAction('comment', 2)"
-                                            class="px-3 py-1 text-sm hover:bg-white/[0.1]">
-                                        评论
+                                            class="w-24 px-3 py-1 text-sm hover:bg-white/[0.1] flex items-center justify-center">
+                                        <i class="iconfont icon-pinglun2 mr-1"></i> 评论
                                     </button>
                                 </div>
                             </div>
@@ -253,15 +250,19 @@
                     <div class="text-gray-600 content-collapse text-[15px]" id="content-3">
                         <p>最初我们来到这个世界，是因为不得不来；<br>最终我们离开这个世界，是因为不得不走。</p>
 
-
-
-                          
-                        <div class="text-right block pr-8 text-[14px] pt-[4px]  ">
-                            &mdash; 摘自<span class="inline-block from-author">余华</span><span class="from-type">出版</span>的<a class="from-name">《活着》</a>
-                           </div>
                         
-
-
+                            <div class="text-right block pr-8 text-[14px] pt-[4px]  ">
+                                &mdash;
+                                摘自<span
+                                        class="inline-block from-author">余华</span>
+                                
+                                <span
+                                        class="from-type">出版</span>的
+                                
+                                <a class="from-name">《活着》</a>
+                                
+                            </div>
+                        
                     </div>
                     <button onclick="toggleContent(3)"
                             style="color: #576b95"
@@ -292,16 +293,16 @@
 
                             <!-- 弹出的操作菜单 -->
                             <div id="actions-3"
-                                 class="hide absolute right-0 mt-1 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
-                                 style="top: 50%;">
+                                 class="hide absolute right-[-3rem] top-3 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
+                            >
                                 <div class="flex items-center text-white divide-x divide-white/[0.2]">
                                     <button onclick="handleAction('save', 3)"
-                                            class="px-3 py-1 text-sm hover:bg-white/[0.1]">
-                                        icon-zan   赞
+                                            class="w-24 px-3 py-1 text-sm hover:bg-white/[0.1] flex items-center justify-center">
+                                        <i class="iconfont icon-zan mr-1"></i> 赞
                                     </button>
                                     <button onclick="handleAction('comment', 3)"
-                                            class="px-3 py-1 text-sm hover:bg-white/[0.1]">
-                                        评论
+                                            class="w-24 px-3 py-1 text-sm hover:bg-white/[0.1] flex items-center justify-center">
+                                        <i class="iconfont icon-pinglun2 mr-1"></i> 评论
                                     </button>
                                 </div>
                             </div>
@@ -314,7 +315,7 @@
 </div>
 <script>
     // 页面加载完成后执行
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         // 遍历所有文章内容
         document.querySelectorAll('[id^="content-"]').forEach((content, index) => {
             const toggle = document.getElementById(`toggle-${index}`);
@@ -385,7 +386,7 @@
     }
 
     // 点击页面其他地方时隐藏所有操作菜单
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         const isActionButton = event.target.closest('button');
         if (!isActionButton || !isActionButton.getAttribute('onclick')?.includes('toggleActions')) {
             document.querySelectorAll('[id^="actions-"]').forEach(menu => {
