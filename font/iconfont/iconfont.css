@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4736674 */
+  src: url('iconfont.woff2?t=1730876606837') format('woff2'),
+       url('iconfont.woff?t=1730876606837') format('woff'),
+       url('iconfont.ttf?t=1730876606837') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zan:before {
+  content: "\e600";
+}
+
+.icon-pinglun:before {
+  content: "\e603";
+}
+
+.icon-pinglun1:before {
+  content: "\e65c";
+}
+
+.icon-pinglun2:before {
+  content: "\e64e";
+}
+
+.icon-pinglun3:before {
+  content: "\e62e";
+}
+
+.icon-pinglun4:before {
+  content: "\e60c";
+}
+
+.icon-pinglun5:before {
+  content: "\e601";
+}
+
+.icon-tubiao_pinglun:before {
+  content: "\e610";
+}
+
