@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>die</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .content-collapse {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body class="bg-gray-50">
+<!-- 主容器 -->
+<div class="max-w-xl mx-auto">
+    <!-- 顶部图片区域 -->
+    <div class="w-full h-80 bg-cover bg-center" style="background-image: url('/images/background.png');">
+    </div>
+
+    <!-- 文章列表区域 -->
+    <div class="">
+
+            <article class="bg-white px-6 py-3 rounded-lg shadow-sm flex" id="article">
+                <!-- 左侧头像 -->
+                <div class="flex-none">
+                    <img src="/images/avatar.png" alt="Author's Avatar" class="h-10 w-10 rounded-lg">
+                </div>
+                <!-- 右侧文章标题和内容 -->
+                <div class="flex-1 ml-4 border-solid border-b-[rgb(243 244 246 / var(--un-border-opacity))] border-b-[1px] pb-2">
+                    <h2 class="text-sm font-semibold mb-1">
+                        <a href="/live/die.html" class=" " style="color: #576b95">
+                            浮生若梦
+                        </a>
+                    </h2>
+                    <div class="text-gray-600 content-collapse mb-1 text-[15px]" id="content">
+                        <p>生命的意义是什么？<br>活着？<br>不！<br>是来过。</p>
+
+                    </div>
+
+                    <!-- 地址信息 -->
+                    <div class="text-xs text-gray-500" style="color: #576b95 ">
+                        北京·皮条胡同
+                    </div>
+
+                    <!-- 底部信息栏 -->
+                    <div class="flex justify-between items-center">
+                        <!-- 日期 -->
+                        <div class="text-xs text-gray-500">
+                            2024-10-30 07:22
+                        </div>
+
+                        <!-- 操作按钮区域 -->
+                        <div class="relative">
+                            <!-- 弹出的操作菜单 -->
+                            <div id="actions"
+                                 class="hide absolute right-0 mt-1 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
+                                 style="top: 50%;">
+                                <div class="flex items-center text-white divide-x divide-white/[0.2]">
+                                    <button onclick="handleAction('save', 111)"
+                                            class="px-3 py-1 text-sm hover:bg-white/[0.1]">
+                                        赞
+                                    </button>
+                                    <button onclick="handleAction('comment', 222)"
+                                            class="px-3 py-1 text-sm hover:bg-white/[0.1]">
+                                        评论
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+    </div>
+</div>
+<script>
+    // 处理操作按钮的点击事件
+    function handleAction(action, index) {
+        if (action === 'save') {
+            console.log('点击了暂存按钮');
+            // 在这里添加暂存功能的处理逻辑
+        } else if (action === 'comment') {
+            console.log('点击了评论按钮');
+            // 在这里添加评论功能的处理逻辑
+        }
+
+        // 处理完后隐藏菜单
+        document.getElementById(`actions-${index}`).classList.add('hide');
+    }
+
+    // 点击页面其他地方时隐藏所有操作菜单
+    document.addEventListener('click', function(event) {
+        const isActionButton = event.target.closest('button');
+        if (!isActionButton || !isActionButton.getAttribute('onclick')?.includes('toggleActions')) {
+            document.querySelectorAll('[id^="actions-"]').forEach(menu => {
+                menu.classList.add('hide');
+            });
+        }
+    });
+</script>
+</body>
+</html>
