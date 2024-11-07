@@ -39,11 +39,19 @@
                 </div>
                 <!-- 右侧文章标题和内容 -->
                 <div class="flex-1 ml-4 border-solid border-b-[rgb(243 244 246 / var(--un-border-opacity))] border-b-[1px] pb-2">
-                    <h2 class="text-sm font-semibold mb-1">
-                        <a href="/live/die.html" class=" " style="color: #576b95">
+                    <div class="text-sm  mb-1 flex justify-between items-center">
+                        <a href="/live/die.html" class="inline-block font-semibold text-[#5c6b8b]">
                             浮生若梦
                         </a>
-                    </h2>
+                        <div class="flex space-x-1">
+                            <span class="tracking-widest bg-[#f7f7f7] px-[0.6rem] py-[0.2rem] text-[0.8rem] text-[#7c7c7c] inline-block">
+                                置顶
+                            </span>
+                            <span class="tracking-widest bg-[#f7f7f7] px-[0.6rem] py-[0.2rem] text-[0.8rem] text-[#7c7c7c] hidden">
+                                广告
+                            </span>
+                        </div>
+                    </div>
                     <div class="text-gray-600 content-collapse text-[15px]" id="content-0">
                         <p>生命的意义是什么？<br>活着？<br>不！<br>是来过。</p>
 
@@ -69,29 +77,31 @@
                         </div>
 
                         <!-- 操作按钮区域 -->
-                        <div class="relative">
+                        <div class="relative inline-block">
                             <!-- 更多按钮 -->
-                            <button onclick="toggleActions(0)"
+                            <button id="show-actions-button-0" onclick="toggleActions(0)"
                                     class="px-2 bg-gray-100 rounded-md text-gray-600 font-bold text-sm">
                                 · ·
                             </button>
 
                             <!-- 弹出的操作菜单 -->
                             <div id="actions-0"
-                                 class="hide absolute right-[-3rem] top-3 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
+                                 class="hide absolute right-full mr-2 top-0 z-10 bg-[#4c4c4c] rounded-md py-1 transform origin-right scale-x-0 transition-all duration-300 ease-in-out opacity-0"
                             >
-                                <div class="flex items-center text-white divide-x divide-white/[0.2]">
+                                <div class="flex items-center text-white divide-x divide-[#3b393a]">
                                     <button onclick="handleAction('save', 0)"
-                                            class="w-24 px-3 text-[0.85rem] hover:bg-white/[0.1] flex items-center justify-center">
+                                            class="w-24 px-[0.5rem] text-[0.85rem] flex items-center justify-center">
                                         <i class="iconfont icon-zan mr-1"></i> 赞
                                     </button>
                                     <button onclick="handleAction('comment', 0)"
-                                            class="w-24 px-3 text-[0.85rem] hover:bg-white/[0.1] flex items-center justify-center">
+                                            class="w-24 px-[0.5rem] text-[0.85rem] flex items-center justify-center">
                                         <i class="iconfont icon-pinglun2 mr-1"></i> 评论
                                     </button>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </article>
@@ -103,11 +113,19 @@
                 </div>
                 <!-- 右侧文章标题和内容 -->
                 <div class="flex-1 ml-4 border-solid border-b-[rgb(243 244 246 / var(--un-border-opacity))] border-b-[1px] pb-2">
-                    <h2 class="text-sm font-semibold mb-1">
-                        <a href="/suiyu/202411061.html" class=" " style="color: #576b95">
+                    <div class="text-sm  mb-1 flex justify-between items-center">
+                        <a href="/suiyu/202411061.html" class="inline-block font-semibold text-[#5c6b8b]">
                             浮生若梦
                         </a>
-                    </h2>
+                        <div class="flex space-x-1">
+                            <span class="tracking-widest bg-[#f7f7f7] px-[0.6rem] py-[0.2rem] text-[0.8rem] text-[#7c7c7c] hidden">
+                                置顶
+                            </span>
+                            <span class="tracking-widest bg-[#f7f7f7] px-[0.6rem] py-[0.2rem] text-[0.8rem] text-[#7c7c7c] hidden">
+                                广告
+                            </span>
+                        </div>
+                    </div>
                     <div class="text-gray-600 content-collapse text-[15px]" id="content-1">
                         <p>如果今生无法破局，来生是否依旧？</p>
 
@@ -133,29 +151,31 @@
                         </div>
 
                         <!-- 操作按钮区域 -->
-                        <div class="relative">
+                        <div class="relative inline-block">
                             <!-- 更多按钮 -->
-                            <button onclick="toggleActions(1)"
+                            <button id="show-actions-button-1" onclick="toggleActions(1)"
                                     class="px-2 bg-gray-100 rounded-md text-gray-600 font-bold text-sm">
                                 · ·
                             </button>
 
                             <!-- 弹出的操作菜单 -->
                             <div id="actions-1"
-                                 class="hide absolute right-[-3rem] top-3 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
+                                 class="hide absolute right-full mr-2 top-0 z-10 bg-[#4c4c4c] rounded-md py-1 transform origin-right scale-x-0 transition-all duration-300 ease-in-out opacity-0"
                             >
-                                <div class="flex items-center text-white divide-x divide-white/[0.2]">
+                                <div class="flex items-center text-white divide-x divide-[#3b393a]">
                                     <button onclick="handleAction('save', 1)"
-                                            class="w-24 px-3 text-[0.85rem] hover:bg-white/[0.1] flex items-center justify-center">
+                                            class="w-24 px-[0.5rem] text-[0.85rem] flex items-center justify-center">
                                         <i class="iconfont icon-zan mr-1"></i> 赞
                                     </button>
                                     <button onclick="handleAction('comment', 1)"
-                                            class="w-24 px-3 text-[0.85rem] hover:bg-white/[0.1] flex items-center justify-center">
+                                            class="w-24 px-[0.5rem] text-[0.85rem] flex items-center justify-center">
                                         <i class="iconfont icon-pinglun2 mr-1"></i> 评论
                                     </button>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </article>
@@ -167,11 +187,19 @@
                 </div>
                 <!-- 右侧文章标题和内容 -->
                 <div class="flex-1 ml-4 border-solid border-b-[rgb(243 244 246 / var(--un-border-opacity))] border-b-[1px] pb-2">
-                    <h2 class="text-sm font-semibold mb-1">
-                        <a href="/suiyu/202411071.html" class=" " style="color: #576b95">
+                    <div class="text-sm  mb-1 flex justify-between items-center">
+                        <a href="/suiyu/202411071.html" class="inline-block font-semibold text-[#5c6b8b]">
                             浮生若梦
                         </a>
-                    </h2>
+                        <div class="flex space-x-1">
+                            <span class="tracking-widest bg-[#f7f7f7] px-[0.6rem] py-[0.2rem] text-[0.8rem] text-[#7c7c7c] hidden">
+                                置顶
+                            </span>
+                            <span class="tracking-widest bg-[#f7f7f7] px-[0.6rem] py-[0.2rem] text-[0.8rem] text-[#7c7c7c] hidden">
+                                广告
+                            </span>
+                        </div>
+                    </div>
                     <div class="text-gray-600 content-collapse text-[15px]" id="content-2">
                         <p>你不应该对短暂出现的人执念太深。</p>
 
@@ -197,29 +225,31 @@
                         </div>
 
                         <!-- 操作按钮区域 -->
-                        <div class="relative">
+                        <div class="relative inline-block">
                             <!-- 更多按钮 -->
-                            <button onclick="toggleActions(2)"
+                            <button id="show-actions-button-2" onclick="toggleActions(2)"
                                     class="px-2 bg-gray-100 rounded-md text-gray-600 font-bold text-sm">
                                 · ·
                             </button>
 
                             <!-- 弹出的操作菜单 -->
                             <div id="actions-2"
-                                 class="hide absolute right-[-3rem] top-3 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
+                                 class="hide absolute right-full mr-2 top-0 z-10 bg-[#4c4c4c] rounded-md py-1 transform origin-right scale-x-0 transition-all duration-300 ease-in-out opacity-0"
                             >
-                                <div class="flex items-center text-white divide-x divide-white/[0.2]">
+                                <div class="flex items-center text-white divide-x divide-[#3b393a]">
                                     <button onclick="handleAction('save', 2)"
-                                            class="w-24 px-3 text-[0.85rem] hover:bg-white/[0.1] flex items-center justify-center">
+                                            class="w-24 px-[0.5rem] text-[0.85rem] flex items-center justify-center">
                                         <i class="iconfont icon-zan mr-1"></i> 赞
                                     </button>
                                     <button onclick="handleAction('comment', 2)"
-                                            class="w-24 px-3 text-[0.85rem] hover:bg-white/[0.1] flex items-center justify-center">
+                                            class="w-24 px-[0.5rem] text-[0.85rem] flex items-center justify-center">
                                         <i class="iconfont icon-pinglun2 mr-1"></i> 评论
                                     </button>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </article>
@@ -231,11 +261,19 @@
                 </div>
                 <!-- 右侧文章标题和内容 -->
                 <div class="flex-1 ml-4 border-solid border-b-[rgb(243 244 246 / var(--un-border-opacity))] border-b-[1px] pb-2">
-                    <h2 class="text-sm font-semibold mb-1">
-                        <a href="/live/huozhe1.html" class=" " style="color: #576b95">
+                    <div class="text-sm  mb-1 flex justify-between items-center">
+                        <a href="/live/huozhe1.html" class="inline-block font-semibold text-[#5c6b8b]">
                             浮生若梦
                         </a>
-                    </h2>
+                        <div class="flex space-x-1">
+                            <span class="tracking-widest bg-[#f7f7f7] px-[0.6rem] py-[0.2rem] text-[0.8rem] text-[#7c7c7c] hidden">
+                                置顶
+                            </span>
+                            <span class="tracking-widest bg-[#f7f7f7] px-[0.6rem] py-[0.2rem] text-[0.8rem] text-[#7c7c7c] hidden">
+                                广告
+                            </span>
+                        </div>
+                    </div>
                     <div class="text-gray-600 content-collapse text-[15px]" id="content-3">
                         <p>我站在儿时的小巷回头望，再也看不到那个快乐的少年郎。</p>
 
@@ -266,29 +304,31 @@
                         </div>
 
                         <!-- 操作按钮区域 -->
-                        <div class="relative">
+                        <div class="relative inline-block">
                             <!-- 更多按钮 -->
-                            <button onclick="toggleActions(3)"
+                            <button id="show-actions-button-3" onclick="toggleActions(3)"
                                     class="px-2 bg-gray-100 rounded-md text-gray-600 font-bold text-sm">
                                 · ·
                             </button>
 
                             <!-- 弹出的操作菜单 -->
                             <div id="actions-3"
-                                 class="hide absolute right-[-3rem] top-3 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
+                                 class="hide absolute right-full mr-2 top-0 z-10 bg-[#4c4c4c] rounded-md py-1 transform origin-right scale-x-0 transition-all duration-300 ease-in-out opacity-0"
                             >
-                                <div class="flex items-center text-white divide-x divide-white/[0.2]">
+                                <div class="flex items-center text-white divide-x divide-[#3b393a]">
                                     <button onclick="handleAction('save', 3)"
-                                            class="w-24 px-3 text-[0.85rem] hover:bg-white/[0.1] flex items-center justify-center">
+                                            class="w-24 px-[0.5rem] text-[0.85rem] flex items-center justify-center">
                                         <i class="iconfont icon-zan mr-1"></i> 赞
                                     </button>
                                     <button onclick="handleAction('comment', 3)"
-                                            class="w-24 px-3 text-[0.85rem] hover:bg-white/[0.1] flex items-center justify-center">
+                                            class="w-24 px-[0.5rem] text-[0.85rem] flex items-center justify-center">
                                         <i class="iconfont icon-pinglun2 mr-1"></i> 评论
                                     </button>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </article>
@@ -300,11 +340,19 @@
                 </div>
                 <!-- 右侧文章标题和内容 -->
                 <div class="flex-1 ml-4 border-solid border-b-[rgb(243 244 246 / var(--un-border-opacity))] border-b-[1px] pb-2">
-                    <h2 class="text-sm font-semibold mb-1">
-                        <a href="/live/hz1.html" class=" " style="color: #576b95">
+                    <div class="text-sm  mb-1 flex justify-between items-center">
+                        <a href="/live/hz1.html" class="inline-block font-semibold text-[#5c6b8b]">
                             浮生若梦
                         </a>
-                    </h2>
+                        <div class="flex space-x-1">
+                            <span class="tracking-widest bg-[#f7f7f7] px-[0.6rem] py-[0.2rem] text-[0.8rem] text-[#7c7c7c] hidden">
+                                置顶
+                            </span>
+                            <span class="tracking-widest bg-[#f7f7f7] px-[0.6rem] py-[0.2rem] text-[0.8rem] text-[#7c7c7c] hidden">
+                                广告
+                            </span>
+                        </div>
+                    </div>
                     <div class="text-gray-600 content-collapse text-[15px]" id="content-4">
                         <p>最初我们来到这个世界，是因为不得不来；<br>最终我们离开这个世界，是因为不得不走。</p>
 
@@ -335,29 +383,31 @@
                         </div>
 
                         <!-- 操作按钮区域 -->
-                        <div class="relative">
+                        <div class="relative inline-block">
                             <!-- 更多按钮 -->
-                            <button onclick="toggleActions(4)"
+                            <button id="show-actions-button-4" onclick="toggleActions(4)"
                                     class="px-2 bg-gray-100 rounded-md text-gray-600 font-bold text-sm">
                                 · ·
                             </button>
 
                             <!-- 弹出的操作菜单 -->
                             <div id="actions-4"
-                                 class="hide absolute right-[-3rem] top-3 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
+                                 class="hide absolute right-full mr-2 top-0 z-10 bg-[#4c4c4c] rounded-md py-1 transform origin-right scale-x-0 transition-all duration-300 ease-in-out opacity-0"
                             >
-                                <div class="flex items-center text-white divide-x divide-white/[0.2]">
+                                <div class="flex items-center text-white divide-x divide-[#3b393a]">
                                     <button onclick="handleAction('save', 4)"
-                                            class="w-24 px-3 text-[0.85rem] hover:bg-white/[0.1] flex items-center justify-center">
+                                            class="w-24 px-[0.5rem] text-[0.85rem] flex items-center justify-center">
                                         <i class="iconfont icon-zan mr-1"></i> 赞
                                     </button>
                                     <button onclick="handleAction('comment', 4)"
-                                            class="w-24 px-3 text-[0.85rem] hover:bg-white/[0.1] flex items-center justify-center">
+                                            class="w-24 px-[0.5rem] text-[0.85rem] flex items-center justify-center">
                                         <i class="iconfont icon-pinglun2 mr-1"></i> 评论
                                     </button>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </article>
@@ -406,22 +456,6 @@
         }
     }
 
-    // 切换操作菜单的显示/隐藏
-    function toggleActions(index) {
-        const actionsMenu = document.getElementById(`actions-${index}`);
-        const allMenus = document.querySelectorAll('[id^="actions-"]');
-
-        // 先隐藏所有其他的菜单
-        allMenus.forEach(menu => {
-            if (menu.id !== `actions-${index}`) {
-                menu.classList.add('hide');
-            }
-        });
-
-        // 切换当前菜单的显示状态
-        actionsMenu.classList.toggle('hide');
-    }
-
     // 处理操作按钮的点击事件
     function handleAction(action, index) {
         if (action === 'save') {
@@ -436,15 +470,53 @@
         document.getElementById(`actions-${index}`).classList.add('hide');
     }
 
-    // 点击页面其他地方时隐藏所有操作菜单
-    document.addEventListener('click', function (event) {
-        const isActionButton = event.target.closest('button');
-        if (!isActionButton || !isActionButton.getAttribute('onclick')?.includes('toggleActions')) {
-            document.querySelectorAll('[id^="actions-"]').forEach(menu => {
-                menu.classList.add('hide');
-            });
+
+    function toggleActions(index) {
+        const actionsElement = document.getElementById(`actions-${index}`);
+        const isHidden = actionsElement.classList.contains('hide');
+
+        if (isHidden) {
+            showActions(index);
+        } else {
+            hideActions(index);
         }
+    }
+
+    function showActions(index) {
+        const actionsElement = document.getElementById(`actions-${index}`);
+        actionsElement.classList.remove('hide');
+        // 强制重绘，确保过渡效果生效
+        void actionsElement.offsetWidth;
+        actionsElement.classList.remove('opacity-0', 'scale-x-0');
+        actionsElement.classList.add('opacity-100', 'scale-x-100');
+    }
+
+    function hideActions(index) {
+        const actionsElement = document.getElementById(`actions-${index}`);
+        actionsElement.classList.remove('opacity-100', 'scale-x-100');
+        actionsElement.classList.add('opacity-0', 'scale-x-0');
+
+        // 延迟添加 'hide' 类，确保过渡动画完成
+        setTimeout(() => {
+            actionsElement.classList.add('hide');
+        }, 300); // 与过渡持续时间一致
+    }
+
+    // 监听整个文档的点击事件
+    document.addEventListener('click', (event) => {
+        const target = event.target;
+        const actionsElements = document.querySelectorAll('[id^="actions-"]');
+
+        actionsElements.forEach((actionsElement) => {
+            const index = actionsElement.id.split('-')[1];
+            const buttonElement = document.getElementById(`show-actions-button-${index}`);
+
+            if (!actionsElement.contains(target) && !buttonElement.contains(target)) {
+                hideActions(index);
+            }
+        });
     });
+
 </script>
 </body>
 </html>
