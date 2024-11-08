@@ -4,105 +4,101 @@
     <meta charset="UTF-8">
     <title>浮生若梦</title>
     <link rel="stylesheet" href="/css/style.css">
-    <style>
-        .content-collapse {
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
-        }
-
-        .hide {
-            display: none;
-        }
-    </style>
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body class="bg-gray-50">
 <div class="max-w-full xl:max-w-lg mx-auto">
 
     <!-- 顶部图片区域 -->
-<div class="w-full md:h-[30rem] lg:h-[20rem] bg-cover bg-center" style="background-image: url('/images/background.png');">
+<div class="w-full bg-cover bg-center relative md:h-[30rem] lg:h-[20rem] "
+     style="background-image: url('/images/background.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center">
+    <!-- 右侧头像 -->
+    <div class="absolute flex items-center justify-end ml-4 right-0 bottom-[-1.2rem] ">
+        <span class="text-lg font-semibold text-white pr-[1.5rem] pb-[0.2rem]">浮生若梦</span>
+        <img src="/images/avatar.png" alt="Author's Avatar" class="h-[4rem] w-[4rem] mr-6 rounded-lg">
+    </div>
 </div>
 
     <!-- 文章列表区域 -->
-    <div class="">
+    <div class="bg-white pt-[2rem]">
+        <article class="px-6 py-3 flex" id="article-0">
+    <!-- 左侧头像 -->
+    <div class="flex-none">
+        <img src="/images/avatar.png" alt="Author's Avatar"
+             class="h-10 w-10 rounded-lg md:h-[5rem] md:w-[5rem] lg:h-10 lg:w-10 ">
+    </div>
+    <!-- 右侧文章标题和内容 -->
+    <div class="flex-1 ml-4 border-solid border-b-[rgb(243 244 246 / var(--un-border-opacity))] border-b-[1px] pb-2">
+        <div class="text-sm flex justify-between items-center">
+            <a href="/suiyu/202411061.html" class="inline-block font-semibold text-[#5c6b8b] md:text-2xl lg:text-[0.95rem]">
+                浮生若梦
+            </a>
+            <div class="flex space-x-1">
+                            <span class="tracking-widest bg-[#f7f7f7] px-[0.6rem] py-[0.2rem] text-[0.8rem] text-[#7c7c7c] md:text-2xl lg:text-[0.8rem] lg:py-[0.1rem] lg:px-[0.6rem] lg:leading-6 hidden">
+                                置顶
+                            </span>
+                <span class="tracking-widest bg-[#f7f7f7] px-[0.6rem] py-[0.2rem] text-[0.8rem] text-[#7c7c7c] md:text-2xl lg:text-[0.8rem] lg:py-[0.1rem] lg:px-[0.6rem] lg:leading-6  hidden">
+                                广告
+                            </span>
+            </div>
+        </div>
+        <div class="text-gray-600 content-collapse text-[15px] md:text-2xl lg:text-[15px] lg:leading-6"
+             id="content-0">
 
-            <article class="bg-white px-6 py-3 rounded-lg shadow-sm flex" id="article">
-                <!-- 左侧头像 -->
-                <div class="flex-none">
-                    <img src="/images/avatar.png" alt="Author's Avatar" class="h-10 w-10 rounded-lg">
+            <p>如果今生无法破局，来生是否依旧？</p>
+
+
+            
+        </div>
+
+        <button onclick="toggleContent(0)"
+                style="color: #576b95"
+                class="cursor-pointer text-sm hidden"
+                id="toggle-0">
+            全 文
+        </button>
+
+        <!-- 地址信息 -->
+        <div class="text-[14px] text-gray-500 md:text-[1.3rem] lg:text-[14px]" style="color: #576b95 ">
+            大奉·南疆·蛊神山
+        </div>
+
+        <!-- 底部信息栏 -->
+        <div class="flex justify-between items-center">
+            <!-- 日期 -->
+            <div class="text-xs text-gray-500 md:text-xl lg:text-xs">
+                2024-11-06 14:01
+            </div>
+
+            <!-- 操作按钮区域 -->
+            <div class="relative inline-block">
+                <!-- 更多按钮 -->
+                <button id="show-actions-button-0" onclick="toggleActions(0)"
+                        class="px-2 bg-gray-100 rounded-md text-gray-600 font-bold text-sm md:px-4 md:py-1 md:text-xl lg:px-2 lg:py-0 lg:text-sm">
+                    · ·
+                </button>
+
+                <!-- 弹出的操作菜单 -->
+                <div id="actions-0"
+                     class="hide absolute right-full mr-2 top-0 z-10 bg-[#4c4c4c] rounded-md py-1 transform origin-right scale-x-0 transition-all duration-300 ease-in-out opacity-0"
+                >
+                    <div class="flex items-center text-white divide-x divide-[#3b393a]">
+                        <button onclick="handleAction('save', 0)"
+                                class="w-24 px-[0.5rem] text-[0.85rem] flex items-center justify-center md:w-[10rem] md:px-[1.5rem] md:text-[1.6rem] lg:w-24 lg:px-[0.5rem] lg:text-[0.85rem]">
+                            <i class="iconfont icon-zan mr-1"></i> 赞
+                        </button>
+                        <button onclick="handleAction('comment', 0)"
+                                class="w-24 px-[0.5rem] text-[0.85rem] flex items-center justify-center md:w-[10rem] md:px-[1.5rem] md:text-[1.6rem] lg:w-24 lg:px-[0.5rem] lg:text-[0.85rem]">
+                            <i class="iconfont icon-pinglun2 mr-1"></i> 评论
+                        </button>
+                    </div>
                 </div>
-                <!-- 右侧文章标题和内容 -->
-                <div class="flex-1 ml-4 border-solid border-b-[rgb(243 244 246 / var(--un-border-opacity))] border-b-[1px] pb-2">
-                    <h2 class="text-sm font-semibold mb-1">
-                        <a href="/suiyu/202411061.html" class=" " style="color: #576b95">
-                            浮生若梦
-                        </a>
-                    </h2>
-                    <div class="text-gray-600 content-collapse mb-1 text-[15px]" id="content">
-                        <p>如果今生无法破局，来生是否依旧？</p>
-
-                    </div>
-
-                    <!-- 地址信息 -->
-                    <div class="text-xs text-gray-500" style="color: #576b95 ">
-                        大奉·南疆·蛊神山
-                    </div>
-
-                    <!-- 底部信息栏 -->
-                    <div class="flex justify-between items-center">
-                        <!-- 日期 -->
-                        <div class="text-xs text-gray-500">
-                            2024-11-06 14:01
-                        </div>
-
-                        <!-- 操作按钮区域 -->
-                        <div class="relative">
-                            <!-- 弹出的操作菜单 -->
-                            <div id="actions"
-                                 class="hide absolute right-0 mt-1 bg-black bg-opacity-60 rounded-md py-1 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap"
-                                 style="top: 50%;">
-                                <div class="flex items-center text-white divide-x divide-white/[0.2]">
-                                    <button onclick="handleAction('save', 111)"
-                                            class="px-3 py-1 text-sm hover:bg-white/[0.1]">
-                                        赞
-                                    </button>
-                                    <button onclick="handleAction('comment', 222)"
-                                            class="px-3 py-1 text-sm hover:bg-white/[0.1]">
-                                        评论
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
+            </div>
+        </div>
+    </div>
+</article>
     </div>
 </div>
-<script>
-    // 处理操作按钮的点击事件
-    function handleAction(action, index) {
-        if (action === 'save') {
-            console.log('点击了暂存按钮');
-            // 在这里添加暂存功能的处理逻辑
-        } else if (action === 'comment') {
-            console.log('点击了评论按钮');
-            // 在这里添加评论功能的处理逻辑
-        }
 
-        // 处理完后隐藏菜单
-        document.getElementById(`actions-${index}`).classList.add('hide');
-    }
-
-    // 点击页面其他地方时隐藏所有操作菜单
-    document.addEventListener('click', function(event) {
-        const isActionButton = event.target.closest('button');
-        if (!isActionButton || !isActionButton.getAttribute('onclick')?.includes('toggleActions')) {
-            document.querySelectorAll('[id^="actions-"]').forEach(menu => {
-                menu.classList.add('hide');
-            });
-        }
-    });
-</script>
+<script src="/js/main.js"></script>
 </body>
 </html>
