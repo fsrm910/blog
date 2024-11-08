@@ -879,6 +879,10 @@ html::-webkit-scrollbar {
     width: 12rem;
   }
 
+  .md\:w-\[24rem\] {
+    width: 24rem;
+  }
+
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -983,6 +987,10 @@ html::-webkit-scrollbar {
 
   .md\:text-\[2rem\] {
     font-size: 2rem;
+  }
+
+  .md\:text-\[4rem\] {
+    font-size: 4rem;
   }
 
   .md\:leading-\[3rem\] {
@@ -1113,6 +1121,10 @@ html::-webkit-scrollbar {
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .lg\:text-\[1rem\] {
+    font-size: 1rem;
   }
 
   .lg\:leading-6 {
