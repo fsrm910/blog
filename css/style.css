@@ -779,6 +779,9 @@ video {
 .duration-300 {
   transition-duration: 300ms;
 }
+.duration-200 {
+  transition-duration: 200ms;
+}
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -864,6 +867,18 @@ html::-webkit-scrollbar {
     width: 8rem;
   }
 
+  .md\:w-\[20rem\] {
+    width: 20rem;
+  }
+
+  .md\:w-\[15rem\] {
+    width: 15rem;
+  }
+
+  .md\:w-\[12rem\] {
+    width: 12rem;
+  }
+
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -909,6 +924,31 @@ html::-webkit-scrollbar {
     padding-right: 0.75rem;
   }
 
+  .md\:px-\[2rem\] {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .md\:py-\[2rem\] {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .md\:py-\[0\.85rem\] {
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
+
+  .md\:px-\[4rem\] {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .md\:pb-1 {
     padding-bottom: 0.25rem;
   }
@@ -939,6 +979,10 @@ html::-webkit-scrollbar {
 
   .md\:text-\[2\.2rem\] {
     font-size: 2.2rem;
+  }
+
+  .md\:text-\[2rem\] {
+    font-size: 2rem;
   }
 
   .md\:leading-\[3rem\] {
@@ -1013,6 +1057,16 @@ html::-webkit-scrollbar {
   .lg\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .lg\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .lg\:py-\[0\.2rem\] {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
   }
 
   .lg\:pb-0 {
