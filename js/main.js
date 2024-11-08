@@ -1,44 +1,39 @@
-// 页面加载完成后执行
-document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('[id^="content-"]').forEach((content, index) => {
-        const toggle = document.getElementById(`toggle-${index}`);
-
-        // 初始化时应用折叠样式
-        content.classList.add('content-collapse');
-
-        // 克隆和测量代码保持不变
-        const clone = content.cloneNode(true);
-        clone.style.cssText = 'position: absolute; visibility: hidden; height: auto; width: ' + content.clientWidth + 'px;';
-        document.body.appendChild(clone);
-
-        const fullHeight = clone.offsetHeight;
-        const currentHeight = content.offsetHeight;
-
-        // 如果完整高度大于当前高度，显示“全文”按钮
-        if (fullHeight > currentHeight) {
-            toggle.classList.remove('hidden');
-        }
-
-        document.body.removeChild(clone);
-    });
-});
-
-
-function toggleContent(index) {
-    const content = document.getElementById('content-' + index);
-    const toggle = document.getElementById('toggle-' + index);
-
-    if (content.classList.contains('content-collapse')) {
-        content.classList.remove('content-collapse');
-        content.classList.add('expand'); // 确保可以完全展开
-        toggle.textContent = '收起';
-    } else {
-        content.classList.remove('expand');
-        content.classList.add('content-collapse');
-        toggle.textContent = '全文';
-    }
-}
-
+// document.addEventListener('DOMContentLoaded', function () {
+//     document.querySelectorAll('[id^="content-"]').forEach((content, index) => {
+//         const toggle = document.getElementById(`toggle-${index}`);
+//
+//         // 初始化时应用折叠样式
+//         content.classList.add('content-collapse');
+//
+//         // 检查内容是否具有 'show-more-tag' 类
+//         const hasShowMoreTag = content.classList.contains('show-more-tag');
+//
+//         // 检查内容是否溢出
+//         const isOverflowing = content.scrollHeight > content.clientHeight;
+//
+//         // 如果两个条件都满足，显示“全文”按钮
+//         if (hasShowMoreTag && isOverflowing) {
+//             toggle.classList.remove('hidden');
+//         } else {
+//             toggle.classList.add('hidden');
+//         }
+//     });
+// });
+//
+// function toggleContent(index) {
+//     const content = document.getElementById('content-' + index);
+//     const toggle = document.getElementById('toggle-' + index);
+//
+//     if (content.classList.contains('content-collapse')) {
+//         content.classList.remove('content-collapse');
+//         content.classList.add('expand'); // 展开内容
+//         toggle.textContent = '收起';
+//     } else {
+//         content.classList.remove('expand');
+//         content.classList.add('content-collapse'); // 折叠内容
+//         toggle.textContent = '全文';
+//     }
+// }
 
 // 处理操作按钮的点击事件
 function handleAction(action, index) {

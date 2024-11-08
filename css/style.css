@@ -680,17 +680,23 @@ video {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 }
-.pb-2 {
-  padding-bottom: 0.5rem;
+.pb-1 {
+  padding-bottom: 0.25rem;
 }
 .pb-\[0\.2rem\] {
   padding-bottom: 0.2rem;
+}
+.pb-\[0rem\] {
+  padding-bottom: 0rem;
 }
 .pr-8 {
   padding-right: 2rem;
 }
 .pr-\[1\.5rem\] {
   padding-right: 1.5rem;
+}
+.pt-\[0\.05rem\] {
+  padding-top: 0.05rem;
 }
 .pt-\[2rem\] {
   padding-top: 2rem;
@@ -725,14 +731,15 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.font-bold {
-  font-weight: 700;
-}
 .font-semibold {
   font-weight: 600;
 }
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+.text-\[\#576b95\] {
+  --tw-text-opacity: 1;
+  color: rgb(87 107 149 / var(--tw-text-opacity));
 }
 .text-\[\#5c6b8b\] {
   --tw-text-opacity: 1;
@@ -805,18 +812,16 @@ html::-webkit-scrollbar {
   display: none; /* Chrome, Safari 和 Opera */
 }
 
-
-.content-collapse {
-  max-height: 6em; /* 大概是四行文字的高度，这个值可能需要根据你的字体大小和行高调整 */
-  overflow: hidden;
-  position: relative;
-  transition: max-height 0.3s ease-in-out;
-}
-
-.expand {
-  max-height: none; /* 完全展开 */
-}
-
+//.content-collapse {
+//  max-height: 6em; /* 根据实际情况调整，这里假设 6em 约为四行文字的高度 */
+//  overflow: hidden;
+//  transition: max-height 0.3s ease;
+//}
+//
+//.expand {
+//  max-height: none;
+//  transition: max-height 0.3s ease;
+//}
 @media (min-width: 768px) {
 
   .md\:h-\[30rem\] {
@@ -835,19 +840,9 @@ html::-webkit-scrollbar {
     width: 5rem;
   }
 
-  .md\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .md\:px-\[1\.5rem\] {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .md\:py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
   }
 
   .md\:text-2xl {
@@ -868,7 +863,6 @@ html::-webkit-scrollbar {
     line-height: 1.75rem;
   }
 }
-
 @media (min-width: 1024px) {
 
   .lg\:h-10 {
@@ -887,11 +881,6 @@ html::-webkit-scrollbar {
     width: 6rem;
   }
 
-  .lg\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
   .lg\:px-\[0\.5rem\] {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -900,11 +889,6 @@ html::-webkit-scrollbar {
   .lg\:px-\[0\.6rem\] {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
-  }
-
-  .lg\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 
   .lg\:py-\[0\.1rem\] {
@@ -932,11 +916,6 @@ html::-webkit-scrollbar {
     font-size: 15px;
   }
 
-  .lg\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -946,7 +925,6 @@ html::-webkit-scrollbar {
     line-height: 1.5rem;
   }
 }
-
 @media (min-width: 1280px) {
 
   .xl\:max-w-lg {
